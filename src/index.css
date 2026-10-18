@@ -1,11 +1,11 @@
 /* Colors and fonts */
 :root {
-  --bg: #F4F0FB;
-  --surface: #FAF7FE;
+  --bg: #EEE6FB;
+  --surface: #F7F2FE;
   --ink: #1F1636;
   --muted: #645A7E;
-  --line: #E1D9F1;
-  --dots: #D3C8EA;
+  --line: #DCD0F2;
+  --dots: #CDBDEB;
   --accent: #6A3FD0;
   --accent-ink: #FFFFFF;
   --accent-soft: #E7DEFA;
@@ -22,30 +22,30 @@
 /* Dark mode: follows the device unless the visitor picks with the toggle */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #130E1F;
-    --surface: #1C1530;
-    --ink: #EEE9FA;
-    --muted: #A69CC2;
-    --line: #2E2546;
-    --dots: #2F2648;
+    --bg: #121114;
+    --surface: #1B1A1F;
+    --ink: #EDEBF2;
+    --muted: #A09DAB;
+    --line: #2A2830;
+    --dots: #2C2A33;
     --accent: #9C7BFF;
-    --accent-ink: #130E1F;
-    --accent-soft: #2A2047;
+    --accent-ink: #121114;
+    --accent-soft: #261F3A;
     --accent-mid: #5B4796;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #130E1F;
-  --surface: #1C1530;
-  --ink: #EEE9FA;
-  --muted: #A69CC2;
-  --line: #2E2546;
-  --dots: #2F2648;
+  --bg: #121114;
+  --surface: #1B1A1F;
+  --ink: #EDEBF2;
+  --muted: #A09DAB;
+  --line: #2A2830;
+  --dots: #2C2A33;
   --accent: #9C7BFF;
-  --accent-ink: #130E1F;
-  --accent-soft: #2A2047;
+  --accent-ink: #121114;
+  --accent-soft: #261F3A;
   --accent-mid: #5B4796;
   color-scheme: dark;
 }
