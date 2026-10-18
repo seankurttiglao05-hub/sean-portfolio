@@ -1,7 +1,7 @@
 /* Colors and fonts */
 :root {
   --bg: #F4F0FB;
-  --surface: #FFFFFF;
+  --surface: #FAF7FE;
   --ink: #1F1636;
   --muted: #645A7E;
   --line: #E1D9F1;
@@ -19,9 +19,9 @@
   color-scheme: light;
 }
 
-/* Dark mode */
+/* Dark mode: follows the device unless the visitor picks with the toggle */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #130E1F;
     --surface: #1C1530;
     --ink: #EEE9FA;
@@ -34,6 +34,20 @@
     --accent-mid: #5B4796;
     color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #130E1F;
+  --surface: #1C1530;
+  --ink: #EEE9FA;
+  --muted: #A69CC2;
+  --line: #2E2546;
+  --dots: #2F2648;
+  --accent: #9C7BFF;
+  --accent-ink: #130E1F;
+  --accent-soft: #2A2047;
+  --accent-mid: #5B4796;
+  color-scheme: dark;
 }
 
 /* Base */
@@ -120,6 +134,40 @@ a {
 
 .nav ul a:hover {
   color: var(--ink);
+}
+
+.nav-inner > ul {
+  margin-left: auto;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  flex: none;
+  width: 56px;
+  height: 30px;
+  padding: 3px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.theme-knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle[aria-checked="true"] .theme-knob {
+  transform: translateX(26px);
 }
 
 /* Hero */
@@ -528,6 +576,25 @@ section h2 {
     font-size: 0.85rem;
   }
 
+  .nav-inner {
+    gap: 12px;
+  }
+
+  .theme-toggle {
+    width: 48px;
+    height: 26px;
+  }
+
+  .theme-knob {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+
+  .theme-toggle[aria-checked="true"] .theme-knob {
+    transform: translateX(22px);
+  }
+
   .hero {
     padding: 40px 0 64px;
   }
@@ -554,6 +621,7 @@ section h2 {
   }
 
   .btn,
+  .theme-knob,
   .socials a,
   .contact-list a {
     transition: none;
