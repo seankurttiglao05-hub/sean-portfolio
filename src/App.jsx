@@ -29,6 +29,7 @@ export default function App() {
               tags={project.tags}
               live={project.live}
               code={project.code}
+              image={project.image}
             />
           ))}
         </section>

@@ -22,6 +22,7 @@ export const projects = [
       'Daily helper: rain countdown, best time to hang laundry (Sampay meter) and PAGASA heat index',
     ],
     tags: ['React Native', 'Expo', 'JavaScript', 'REST API'],
+    image: '/projects/weather.jpg',
     live: 'https://weather-app-seven-vert-37.vercel.app',
     code: 'https://github.com/seankurttiglao05-hub/weather-app',
   },
