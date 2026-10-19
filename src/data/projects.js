@@ -11,5 +11,19 @@ export const projects = [
     ],
     tags: ['React Native', 'Expo', 'Android', 'Image processing'],
   },
+  {
+    id: 'weather',
+    name: 'Weather',
+    role: 'Personal project · Mobile and web',
+    summary: 'A weather app that runs on Android, iOS and the web from one codebase, with a daily helper for Filipino weather.',
+    points: [
+      'Live forecast, air quality and UV from the Open-Meteo APIs, by city search or GPS',
+      'Background color, moving clouds and falling rain change with the current weather',
+      'Daily helper: rain countdown, best time to hang laundry (Sampay meter) and PAGASA heat index',
+    ],
+    tags: ['React Native', 'Expo', 'JavaScript', 'REST API'],
+    live: '',
+    code: 'https://github.com/seankurttiglao05-hub/weather-app',
+  },
  
 ]

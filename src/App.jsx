@@ -27,6 +27,8 @@ export default function App() {
               summary={project.summary}
               points={project.points}
               tags={project.tags}
+              live={project.live}
+              code={project.code}
             />
           ))}
         </section>

@@ -627,3 +627,9 @@ section h2 {
     transition: none;
   }
 }
+
+/* Project links */
+.project .project-link {
+  justify-content: flex-start;
+  margin-top: 8px;
+}
