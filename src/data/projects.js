@@ -24,7 +24,6 @@ export const projects = [
     tags: ['React Native', 'Expo', 'JavaScript', 'REST API'],
     image: '/projects/weather.jpg',
     live: 'https://weather-app-seven-vert-37.vercel.app',
-    code: 'https://github.com/seankurttiglao05-hub/weather-app',
   },
  
 ]
