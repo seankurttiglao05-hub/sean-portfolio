@@ -1,3 +1,5 @@
+import Reveal from './Reveal.jsx'
+
 // When you have a photo, put it in the "public" folder as profile.jpg
 // and change null to '/profile.jpg'.
 const photo = '/profile.jpg'
@@ -7,7 +9,7 @@ export default function About() {
     <section id="about" className="about">
       <p className="eyebrow">About</p>
 
-      <div className="about-grid">
+      <Reveal className="about-grid">
         {photo ? (
           <img className="avatar" src={photo} alt="Sean Tiglao" />
         ) : (
@@ -22,7 +24,7 @@ export default function About() {
             
           </p>
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }
