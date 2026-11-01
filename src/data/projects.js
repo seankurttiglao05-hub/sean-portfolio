@@ -36,6 +36,7 @@ export const projects = [
     tags: ['React', 'Node.js', 'Express', 'MySQL', 'REST API'],
     categories: ['Web', 'AI'],
     media: { type: 'browser', src: '/projects/generic-finder.jpg' },
+    live: 'https://generic-finder.vercel.app',
   },
   {
     id: 'weather',
@@ -51,6 +52,7 @@ export const projects = [
     tags: ['React Native', 'Expo', 'JavaScript', 'REST API'],
     categories: ['Mobile', 'Web'],
     media: { type: 'phone', src: '/projects/weather.jpg' },
+    live: 'https://weather-app-seven-vert-37.vercel.app',
   },
   {
     id: 'spa-agent',
