@@ -18,6 +18,7 @@ export default function Skills() {
               </span>
               {skill.name}
               {skill.learning && <span className="learning">Learning</span>}
+              {skill.basic && <span className="learning">Basic</span>}
             </Reveal>
           )
         })}

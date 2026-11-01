@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard.jsx'
 import Reveal from './Reveal.jsx'
 import { projects } from '../data/projects.js'
 
-const FILTERS = ['All', 'Mobile', 'Web', 'AI']
+const FILTERS = ['All', 'Mobile', 'Web']
 
 export default function Projects() {
   const [filter, setFilter] = useState('All')
